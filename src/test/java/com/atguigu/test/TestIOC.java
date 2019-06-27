@@ -1,5 +1,6 @@
 package com.atguigu.test;
 
+import com.atguigu.bean.Person;
 import com.atguigu.config.MainConfig;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -19,5 +20,6 @@ public class TestIOC {
 		for (String name : definitionNames) {
 			System.out.println(name);
 		}
+		Person person = (Person) applicationContext.getBean("person01");
 	}
 }

@@ -26,7 +26,7 @@ public class MyTypeFilter implements TypeFilter {
 		Resource resource = metadataReader.getResource();
 		
 		String className = classMetadata.getClassName();
-		System.out.println("--->"+className);
+		System.out.println("查找合适的bean --->"+className);
 		if(className.contains("er")){
 			return true;
 		}

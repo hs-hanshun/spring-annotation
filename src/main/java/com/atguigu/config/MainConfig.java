@@ -14,7 +14,7 @@ import com.atguigu.bean.Person;
 
 @ComponentScans(
 		value = {
-				@ComponentScan(value="com.atguigu.bean",includeFilters = {
+				@ComponentScan(value="com.atguigu.ioc",includeFilters = {
 /*						@Filter(type=FilterType.ANNOTATION,classes={Controller.class}),
 						@Filter(type=FilterType.ASSIGNABLE_TYPE,classes={BookService.class}),*/
 						@Filter(type=FilterType.CUSTOM,classes={MyTypeFilter.class})
