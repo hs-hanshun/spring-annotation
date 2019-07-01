@@ -62,6 +62,7 @@ public class MainConfig2 {
 	 */
 	
 	@Bean("bill")
+	@Conditional(WindowsCondition.class)
 	public Person person01(){
 		return new Person("Bill Gates",62);
 	}
