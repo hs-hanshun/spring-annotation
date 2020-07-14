@@ -7,7 +7,7 @@
 
 
 	<dependencies>
-		<!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+		<!-- spring-context 会自动引入spring-core、spring-beans、spring-aop、spring-expression -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
@@ -32,21 +32,21 @@
 			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/javax.inject/javax.inject -->
+		<!-- javax.inject -->
 		<dependency>
 			<groupId>javax.inject</groupId>
 			<artifactId>javax.inject</artifactId>
 			<version>1</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/c3p0/c3p0 -->
+		<!-- c3p0 -->
 		<dependency>
 			<groupId>c3p0</groupId>
 			<artifactId>c3p0</artifactId>
 			<version>0.9.1.2</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+		<!-- mysql-connector-java -->
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
