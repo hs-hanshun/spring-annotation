@@ -25,13 +25,6 @@
 			<artifactId>spring-jdbc</artifactId>
 			<version>5.2.7.RELEASE</version>
 		</dependency>
-		
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.12</version>
-			<scope>test</scope>
-		</dependency>
 		<!-- javax.inject -->
 		<dependency>
 			<groupId>javax.inject</groupId>
@@ -52,13 +45,19 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<version>5.1.44</version>
 		</dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>5.0.2</version>
-            <scope>compile</scope>
-        </dependency>
-    </dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.8.2</version>
+			<scope>compile</scope>
+		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>org.junit.jupiter</groupId>-->
+<!--			<artifactId>junit-jupiter-api</artifactId>-->
+<!--			<version>5.0.2</version>-->
+<!--			<scope>compile</scope>-->
+<!--		</dependency>-->
+	</dependencies>
 
     <build>
         <plugins>
