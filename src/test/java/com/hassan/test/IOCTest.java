@@ -14,10 +14,9 @@ import com.hassan.config.MainConfig2;
 
 public class IOCTest {
 
-	private final AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(MainConfig2.class);
-
 	@Test
 	public void testImport(){
+		AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(MainConfig2.class);
 		printBeans(applicationContext);
 		Blue bean = applicationContext.getBean(Blue.class);
 		System.out.println(bean);
@@ -41,6 +40,7 @@ public class IOCTest {
 	
 	@Test
 	public void test03(){
+		AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(MainConfig2.class);
 		String[] namesForType = applicationContext.getBeanNamesForType(Person.class);
 		ConfigurableEnvironment environment = applicationContext.getEnvironment();
 		//动态获取环境变量的值；Windows 10
