@@ -83,7 +83,6 @@ public class MainConfigOfProfile implements EmbeddedValueResolverAware{
 
 	@Override
 	public void setEmbeddedValueResolver(StringValueResolver resolver) {
-		// TODO Auto-generated method stub
 		this.valueResolver = resolver;
 		driverClass = valueResolver.resolveStringValue("${db.driverClass}");
 	}
