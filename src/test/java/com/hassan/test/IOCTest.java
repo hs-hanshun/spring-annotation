@@ -13,9 +13,9 @@ import com.hassan.config.MainConfig;
 import com.hassan.config.MainConfig2;
 
 public class IOCTest {
-	private AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(MainConfig2.class);
-	
-	
+
+	private final AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(MainConfig2.class);
+
 	@Test
 	public void testImport(){
 		printBeans(applicationContext);
