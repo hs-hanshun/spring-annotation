@@ -3,6 +3,7 @@ package com.hassan.test;
 import com.hassan.aop.MathCalculator;
 import com.hassan.config.MainConfigOfAOP;
 import org.junit.Test;
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
@@ -15,7 +16,8 @@ public class TestIOC {
 	@SuppressWarnings("resource")
 	@Test
 	public void test01(){
-		AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(MainConfigOfAOP.class);
+
+		ApplicationContext applicationContext = new AnnotationConfigApplicationContext(MainConfigOfAOP.class);
 		String[] definitionNames = applicationContext.getBeanDefinitionNames();
 		for (String name : definitionNames) {
 			System.out.println(name);
