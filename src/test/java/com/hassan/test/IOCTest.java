@@ -75,7 +75,7 @@ public class IOCTest {
 	@SuppressWarnings("resource")
 	@Test
 	public void test01(){
-		AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(MainConfig.class);
+		AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(MainConfig2.class);
 		String[] definitionNames = applicationContext.getBeanDefinitionNames();
 		for (String name : definitionNames) {
 			System.out.println(name);

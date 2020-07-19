@@ -1,5 +1,7 @@
 package com.hassan.config;
 
+import com.hassan.condition.MyImportBeanDefinitionRegistrar;
+import com.hassan.condition.MyImportSelector;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Conditional;
@@ -17,9 +19,9 @@ import com.hassan.condition.WindowsCondition;
 
 //类中组件统一设置。满足当前条件，这个类中配置的所有bean注册才能生效；
 // @Conditional({WindowsCondition.class})
-// @Import({Color.class,Red.class,MyImportSelector.class,MyImportBeanDefinitionRegistrar.class})
+ @Import({Color.class,Red.class, MyImportSelector.class, MyImportBeanDefinitionRegistrar.class})
 @Configuration
-@Import({Color.class,Red.class,Blue.class})
+//@Import({Color.class,Red.class,Blue.class})
 //@Import导入组件，id默认是组件的全类名
 public class MainConfig2 {
 	
