@@ -12,7 +12,7 @@ public class MyImportSelector implements ImportSelector {
 	public String[] selectImports(AnnotationMetadata importingClassMetadata) {
 		//importingClassMetadata
 		//方法不要返回null值
-		return new String[]{"com.atguigu.bean.Blue","com.atguigu.bean.Yellow"};
+		return new String[]{"com.hassan.bean.Blue","com.hassan.bean.Yellow"};
 	}
 
 }

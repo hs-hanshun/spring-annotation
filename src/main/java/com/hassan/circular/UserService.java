@@ -8,4 +8,8 @@ public class UserService {
 
     @Autowired
     private RoleService roleService;
+
+    public UserService() {
+        System.out.println("UserService Constructor");
+    }
 }

@@ -63,7 +63,7 @@ public class IOCTest {
 			System.out.println(name);
 		}
 
-		Red red = (Red) applicationContext.getBean("com.atguigu.bean.Red");
+		Red red = (Red) applicationContext.getBean("com.hassan.bean.Red");
 
 
 		System.out.println("ioc容器创建完成....");
