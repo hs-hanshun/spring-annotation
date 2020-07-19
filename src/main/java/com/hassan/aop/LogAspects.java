@@ -45,7 +45,7 @@ public class LogAspects {
 		System.out.println(""+joinPoint.getSignature().getName()+"异常。。。异常信息：{"+exception+"}");
 	}
 
-	@Around(value = "pointCut()")
+	//@Around(value = "pointCut()")
 	public Object logAroung(ProceedingJoinPoint joinPoint) throws Throwable {
 		Object proceed = joinPoint.proceed();
 		System.out.println("around " + proceed.toString());
