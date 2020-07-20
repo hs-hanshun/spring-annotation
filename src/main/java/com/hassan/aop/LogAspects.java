@@ -13,16 +13,18 @@ import org.aspectj.lang.annotation.*;
  * @Aspect： 告诉Spring当前类是一个切面类
  *
  */
-@Aspect
+@Aspect //切面类
 public class LogAspects {
 	
 	//抽取公共的切入点表达式
 	//1、本类引用
 	//2、其他的切面引用
+	//切点（连接点的集合 MathCalculator所有方法为连接点）
 	@Pointcut("execution(public int com.hassan.aop.MathCalculator.*(..))")
 	public void pointCut(){};
 	
 	//@Before在目标方法之前切入；切入点表达式（指定在哪个方法切入）
+	//通知
 	@Before("pointCut()")
 	public void logStart(JoinPoint joinPoint){
 		Object[] args = joinPoint.getArgs();
